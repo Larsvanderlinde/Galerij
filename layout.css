@@ -1,0 +1,11 @@
+body {
+    background-color: aquamarine;
+}
+
+.gallerytumb {
+    height: 200px;
+    width: 300px;
+    float: left;
+    margin: 5px;
+}
+
