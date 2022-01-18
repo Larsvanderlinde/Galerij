@@ -32,7 +32,7 @@
             $ww=$_POST['wachtwoord'];
 
             if ( $gb=='LarsMan1222' && $ww=='lars' ) {
-                header("location:gallery.html");
+                header("location:gallery.php");
                 exit ();
             }
 
@@ -40,6 +40,7 @@
                 echo "Verkeerde gebruikersnaam/wachtwoord";
             }
         }
+        
 
     ?>
 
