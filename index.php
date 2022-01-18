@@ -1,28 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<link rel="stylesheet"  href="inloggen.css">
-
-    <title>Document</title>
+	<title>LOGIN</title>
+	<link rel="stylesheet" type="text/css" href="layout.css">
 </head>
 <body>
-    <div> 
-        
+     <form action="login.php" method="post">
+     	<h2>LOGIN</h2>
+     	<?php if (isset($_GET['error'])) { ?>
+     		<p class="error"><?php echo $_GET['error']; ?></p>
+     	<?php } ?>
+     	<label>Gebruikersnaam</label>
+     	<input type="text" name="uname" placeholder="Gebruikersnaam"><br>
 
-      <form action = "inlog.php" method= "post" > 
-      <h2>Inloggen </h2>
-      <?php if (isset($_GET['error'])) { ?>
-            <p class = "error"><?php echo $_GET['error']; ?> </p>
-      <?php } ?>
+     	<label>Wachtwoord</label>
+     	<input type="password" name="password" placeholder="Wachtwoord"><br>
 
-      
-      <label> Gebruikersnaam </label>
-      <input type = "text" name = "gnaam" placeholder = "Gebruikersnaam"> <br>
-      <label> Wachtwoord </label>
-      <input type = "text" name = "wachtwoord" placeholder = "Wachtwoord"> <br>
-      <button type = "submit"> Inloggen </button>
-      </form>
-
-    
+     	<button type="submit">Inloggen</button>
+     </form>
 </body>
 </html>
