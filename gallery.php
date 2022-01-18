@@ -25,8 +25,7 @@ foreach($fotos as $x)
 }
 ?>
     </div>
-</body>
-</html>
+
 
 
       <?php echo $_SESSION['name']; ?>
