@@ -19,7 +19,8 @@ if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
 <ul>
   <li><a href="gallery.php">Home</a></li>
   <li><a href="upload.php">Upload</a></li>
-  <li id="uitloggen"><a href="uitloggen.php"><?php echo $_SESSION['name']; ?>   Uitloggen</a></li>
+  <li><a id= "welkom">Welkom <?php echo $_SESSION['name']; ?></a></li>
+  <li id="uitloggen"><a href="uitloggen.php">   Uitloggen</a></li>
 </ul>
      
 

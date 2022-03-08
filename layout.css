@@ -49,7 +49,16 @@ label {
     border-radius: 5px;
     margin-right: 10px;
     border: none;
-    position: sticky;
+}
+
+#button3 {
+    float: right;
+    background: #555;
+    padding: 10px 15px;
+    color: #fff;
+    border-radius: 5px;
+    margin-right: 10px;
+    border: none;
 }
 
 #button2 {
@@ -94,11 +103,14 @@ button:hover{
     text-decoration: none;
   }
   
-  /* Change the link color to #111 (black) on hover */
-  li a:hover {
-    background-color: #111;
-  }
+  
   #uitloggen {
       float: right;
+  }
+
+  #welkom {
+      text-align: center;
+      object-position: center;
+      
   }
 
