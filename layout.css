@@ -1,9 +1,8 @@
 body {
-    background-color:aquamarine;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    background-color:pink;
+    
+    
+    
 }
 
 *{
@@ -11,12 +10,15 @@ body {
     box-sizing: border-box;
 }
 
+
 form {
     width: 500px;
     border: 2px solid #ccc;
     background-color: #fff;
     border-radius: 15px;
-    height: 330px;
+    height: 350px;
+    
+    
 }
 
 h2 {
@@ -39,13 +41,24 @@ label {
     padding: 10px;
 }
 
-button {
+#button1 {
     float: right;
     background: #555;
     padding: 10px 15px;
     color: #fff;
     border-radius: 5px;
     margin-right: 10px;
+    border: none;
+    position: sticky;
+}
+
+#button2 {
+    float: left;
+    background: #555;
+    padding: 10px 15px;
+    color: #fff;
+    border-radius: 5px;
+    margin-left: 10px;
     border: none;
 }
 
@@ -61,9 +74,31 @@ button:hover{
     margin: 20px auto;
  }
 
- .gallerytumb {
-    height: 200px;
-    width: 300px;
+ ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
     float: left;
-    margin: 5px;
-}
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: #111;
+  }
+  #uitloggen {
+      float: right;
+  }
+

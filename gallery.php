@@ -3,33 +3,38 @@ session_start();
 
 if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
 
+
+  $target_dir = "fotos/";
+  $images = scandir($target_dir);
+
  ?>
 <!DOCTYPE html>
 <html>
 <head>
 	<title>HOME</title>
-	<link rel="stylesheet" type="text/css" href="layout.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+    
+<ul>
+  <li><a href="gallery.php">Home</a></li>
+  <li><a href="upload.php">Upload</a></li>
+  <li id="uitloggen"><a href="uitloggen.php"><?php echo $_SESSION['name']; ?>   Uitloggen</a></li>
+</ul>
      
-<body>
-    <div>
 
-    <?php
-
-$fotos = array ("1014033.jpg", "aaa.jpg", "and.jpg", "boo.jpg", "eat.jpg", "elixer.jpg", "morty.jpg", "pado.jpg", "portal.jpg", "rick.png");
-
-foreach($fotos as $x)
-{
-    echo "<img class = 'gallerytumb' src='fotos/". $x ."'>";
-}
-?>
-    </div>
+    <?php foreach ($images as $image) {
+      $path_parts = pathinfo( $target_dir.$image);
+      if(in_array($path_parts['extension'],['jpg', 'png'])) {
+      
+      ?>
+      <img class="gallerytumb" src='<?= $target_dir.$image ?>'>
+      <?php }} ?>
 
 
 
-      <?php echo $_SESSION['name']; ?>
-     <a href="uitloggen.php">Uitloggen</a>
+      
+     
 </body>
 </html>
 
