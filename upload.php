@@ -1,4 +1,6 @@
-
+<?php session_start();
+if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -72,7 +74,10 @@
       }
     }
     
-
+  }else{
+    header("Location: index.php");
+    exit();
+}
      ?>
 </body>
 </html>

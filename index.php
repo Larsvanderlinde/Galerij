@@ -17,10 +17,11 @@
 			<label>Wachtwoord</label>
 			<input type="password" name="password" placeholder="Wachtwoord"><br>
 
-			<button id = "button1"type="submit">Inloggen</button>
+			<button id =  "button1"type="submit">Inloggen</button>
 			
-			<button id = "button2" type="submit">Registreren </button>
+			
 		</form>
+		<button id = "button2" name = "reg"  type="submit"><a  href = "registreren.php"> Registreren</a> </button>
 	</div>
 </body>
 </html>
