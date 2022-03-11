@@ -12,8 +12,9 @@ if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
 
 <ul>
   <li><a href="gallery.php">Home</a></li>
-  <div><a href="upload.php">Upload</a></div>
-  <li id="uitloggen"><a href="uitloggen.php">Uitloggen</a></li>
+  <li><a href="upload.php">Upload</a></li>
+  <li><a id= "welkom">Welkom <?php echo $_SESSION['name']; ?></a></li>
+  <li id="uitloggen"><a href="uitloggen.php">   Uitloggen</a></li>
 </ul>
 
      <form  id = "form "action="upload.php" method="post" enctype="multipart/form-data">
